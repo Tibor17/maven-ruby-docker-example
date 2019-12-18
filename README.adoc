@@ -1,0 +1,14 @@
+= Ruby example with MD5 checker over file system
+:revdate: {docdate}
+:toc: left
+:sectanchors:
+:Author: Tibor Digaňa
+:numbered:
+:star: *
+
+image::https://github.com/Tibor17/maven-ruby-docker-example/workflows/CI/badge.svg?branch=master[link="https://github.com/Tibor17/maven-ruby-docker-example/actions/"[GitHub CI]]
+
+image::https://github.com/Tibor17/maven-ruby-docker-example/workflows/CI/badge.svg?branch=master[link="https://github.com/Tibor17/maven-ruby-docker-example/actions/"]
+
+
+
