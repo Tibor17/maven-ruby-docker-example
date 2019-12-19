@@ -21,7 +21,7 @@ class BitmapsSanitycheck
 
   def assert_different_bitmaps
     if @files.length > 1
-      s = Set.new([@bitmaps])
+      s = Set.new(@bitmaps)
       if @bitmaps.length != s.size
         printf "Found (#{@files.length}) files with the same MD5: #{@md5}:\n"
         @files.each { |f|
