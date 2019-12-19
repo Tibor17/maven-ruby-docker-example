@@ -27,7 +27,7 @@ image::docs/2019-12-18 11_47_37-Window.png[]
 == CLI Ruby application
 
 The asset files are located in `src/test/ruby/assets` for testing purposes.
-The file `a.txt` is single and the `b.txt` appears twice with different content.
+The file `a.txt` is duplicated and `b.txt` appears twice with different content.
 
 Run the commandline application as follows
 
