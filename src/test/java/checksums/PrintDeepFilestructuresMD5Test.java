@@ -30,11 +30,14 @@ public class PrintDeepFilestructuresMD5Test {
 
         assertThat(stdOut.toString())
                 .containsSubsequence(
-                        "a.txt",
-                        "MD5: 60b725f10c9c85c70d97880dfe8191b3",
-                        "b.txt",
-                        "MD5: ba1f2511fc30423bdbb183fe33f3dd0f",
-                        "MD5: c0710d6b4f15dfa88f600b0e6b624077"
+                    "Found (2) files with the same MD5: 60b725f10c9c85c70d97880dfe8191b3",
+                    "assets/a.txt",
+                    "assets/subdir/a.txt",
+                    "a.txt",
+                    "MD5: 60b725f10c9c85c70d97880dfe8191b3",
+                    "b.txt",
+                    "MD5: ba1f2511fc30423bdbb183fe33f3dd0f",
+                    "MD5: c0710d6b4f15dfa88f600b0e6b624077"
                 );
     }
 }
