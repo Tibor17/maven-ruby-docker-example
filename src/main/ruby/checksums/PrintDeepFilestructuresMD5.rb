@@ -25,7 +25,6 @@ def x.group_file_md5(base_dir, file_name_pattern)
     end
     file_name_mapping[f_name] = hashes
   }
-  file_name_mapping.sort_by {|k,v| k}
   file_name_mapping
 end
 
@@ -33,17 +32,17 @@ end
 # @param [String] file_name_pattern    the regex pattern for file name including the extension
 def x.print_checksums(base_dir, file_name_pattern)
   file_name_mapping = self.group_file_md5(base_dir, file_name_pattern)
-
-  file_name_mapping.each_pair do |f, h|
+  file_name_mapping.keys.sort.each{|f|
+    h = file_name_mapping[f]
     printf "\n"
     printf f
     printf "\n"
-    h.each { |hh|
+    h.each { |c|
       printf '    MD5: '
-      printf hh
+      printf c
       printf "\n"
     }
-  end
+  }
 end
 
 def assert(success, err_msg)
