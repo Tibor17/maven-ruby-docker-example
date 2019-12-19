@@ -18,4 +18,4 @@ jobs:
         java-version: 1.8
 
     - name: Build with Maven
-      run: mvn -e -B -V -nsu --no-transfer-progress test
+      run: mvn -e -B -V -nsu --no-transfer-progress -f ../pom.xml test
