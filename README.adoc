@@ -35,7 +35,12 @@ Run the commandline application as follows
 ----
 $ ruby src/main/ruby/checksums/PrintDeepFilestructuresMD5.rb *\.txt
 
+Found (2) files with the same MD5: 60b725f10c9c85c70d97880dfe8191b3:
+C:/vcs/github/tibor17/maven-ruby-docker-example/src/test/ruby/assets/a.txt
+C:/vcs/github/tibor17/maven-ruby-docker-example/src/test/ruby/assets/subdir/a.txt
+
 a.txt
+    MD5: 60b725f10c9c85c70d97880dfe8191b3
     MD5: 60b725f10c9c85c70d97880dfe8191b3
 
 b.txt
@@ -86,7 +91,12 @@ Successfully tagged tibor17/ruby-md5:latest
 $ docker run -it --rm tibor17/ruby-md5:latest
 ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
 
+Found (2) files with the same MD5: 60b725f10c9c85c70d97880dfe8191b3:
+/root/src/test/ruby/assets/a.txt
+/root/src/test/ruby/assets/subdir/a.txt
+
 a.txt
+    MD5: 60b725f10c9c85c70d97880dfe8191b3
     MD5: 60b725f10c9c85c70d97880dfe8191b3
 
 b.txt
