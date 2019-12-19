@@ -25,7 +25,7 @@ def x.group_file_md5(base_dir, file_name_pattern)
     end
     file_name_mapping[f_name] = hashes
   }
-  file_name_mapping.keys.sort
+  file_name_mapping.sort_by {|k,v| k}
   file_name_mapping
 end
 
